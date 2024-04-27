@@ -1,0 +1,13 @@
+<div class="stripe-payment-container">
+  <div class="stripe-payment-form">
+    <h5>Stripe Payment</h5>
+    <div class="form-field">
+      <input [(ngModel)]="stripeAmount" type="number" required />
+      <span class="prefix">$&nbsp;</span>
+    </div>
+
+    <button class="raised-button primary" type="submit" (click)="checkout()">
+      Checkout
+    </button>
+  </div>
+</div>
